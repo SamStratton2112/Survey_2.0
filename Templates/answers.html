@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block page_name %} Answers {% endblock %}
+
+{% block content %}
+
+<h2>Here are your results:</h2>
+
+<ul>
+    {% for answer in responses %}
+    <li>{{answer}}</li>
+    {% endfor %}
+</ul>
+
+<form action="/">
+    <button>Home</button>
+</form>
+
+{% endblock %}
